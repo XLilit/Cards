@@ -1,0 +1,32 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+.L-card{
+  background-color: $white;
+  width: 200px;
+  height: 120px;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid $grey-base;
+  position: relative;
+  p{
+    color: $purple;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .L-card-delete-btn{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    background-color: transparent;
+    color: $red-dark;
+    font-size: 25px;
+    font-weight: bolder;
+    &:hover{
+      color: $black;
+      transition: $transition;
+    }
+  }
+}

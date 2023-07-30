@@ -1,0 +1,37 @@
+@import "src/assets/style/variables";
+@import "src/assets/style/mixin";
+
+.L-cards-wrapper {
+  .L-cards-btn {
+    justify-content: center;
+    margin-top: 15px;
+
+    .L-card-btn, .L-sort-btn, .L-del-btn {
+      border-radius: 5px;
+      border: 1px solid $grey-base;
+      width: 150px;
+      height: 40px;
+    }
+
+    .L-sort-btn {
+      margin: 0 15px;
+      background-color: $yellow;
+      &:hover {
+        background-color: $purple;
+        color: $white;
+      }
+    }
+
+    .L-del-btn {
+      background-color: $red-dark;
+      &:hover {
+        background-color: $grey-base;
+        color: $white;
+      }
+    }
+  }
+
+  .L-cards-content {
+    margin-top: 25px;
+  }
+}
